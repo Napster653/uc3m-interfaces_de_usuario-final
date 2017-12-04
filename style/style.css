@@ -7,69 +7,92 @@ body
 }
 header
 {
-	background-color: #1b1b1b;
-	padding-left: 50px;
+	background-color: #282828;
 	position: fixed;
 	top: 0px;
 	width: 100%;
 	z-index: 1;
 }
-	header h1
+	header ul
 	{
-		display: inline-block;
-		font-family: "Arial Black", sans-serif;
-		font-size: 50px;
-		margin: 20px 0;
-	}
-	.headerText01
-	{
-		background-color: #FACA04;
-		color: black;
-	}
-	.headerText02
-	{
-		color: white;
-		margin-left: 5px;
-	}
-nav
-{
-		background-color: #1b1b1b;
-		border-bottom: 1px solid #FACA04;
-		border-top: 1px solid #FACA04;
-		overflow: hidden;
-		padding-left: 50px;
-}
-	nav ul
-	{
+		display: block;
+		height: 50px;
 		list-style-type: none;
+		overflow: hidden;
 	}
-	nav li
+	header ul li
 	{
-		border-right: 1px solid #FACA04;
 		float: left;
 	}
-	nav li:last-child
-	{
-		border: none;
-	}
-	nav a
+	.header-title
 	{
 		color: white;
 		display: block;
-		padding: 5px 20px;
-		text-decoration: none;
+		font-size: 24px;
+		padding: 13px;
 	}
-	nav a:hover
+	.login-button
 	{
-		background-color: #FACA04;
-		color: black;
+		color: orange;
+		cursor: pointer;
+		display: block;
+		font-size: 18px;
+		padding: 16px;
+		text-transform: uppercase;
 	}
-	.active
+	.dropdown
 	{
-		text-decoration: underline;
+		display: block;
 	}
-section
+	.dropdown-button
+	{
+		color: orange;
+		cursor: pointer;
+		display: block;
+		padding: 13px;
+		position: relative;
+	}
+	.dropdown-content
+	{
+		background-color: #282828;
+		color: white;
+		display: none;
+		min-width: 100px;
+		position: absolute;
+		z-index: 1;
+	}
+	.dropdown-content a
+	{
+		background-color: #282828;
+		color: orange;
+		cursor: pointer;
+		display: block;
+		font-size: 14px;
+		padding: 13px;
+		text-transform: uppercase;
+	}
+	.dropdown-content i
+	{
+		padding-right: 5px;
+		vertical-align: middle;
+	}
+	.dropdown-content a:hover
+	{
+		background-color: #7E7E7E;
+	}
+.left
 {
-	margin: 0 auto;
-	width: 70%;
+	float: left;
 }
+.right
+{
+	float: right;
+}
+.show
+{
+	display: block;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
