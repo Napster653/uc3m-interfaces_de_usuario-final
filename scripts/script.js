@@ -7,7 +7,7 @@ window.onclick = function(event)
 	if (!$(event.target).parents('.dropdown').length)
 	{
 		console.log("outside");
-		var dropdowns = document.getElementsByClassName('dropdown-content');
+		var dropdowns = document.getElementsByClassName('dropdown-container');
 		for (var i = 0; i < dropdowns.length; i++)
 		{
 			if (dropdowns[i].classList.contains('show'))

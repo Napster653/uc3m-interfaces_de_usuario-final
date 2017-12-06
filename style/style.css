@@ -33,12 +33,15 @@ header
 	}
 	.login-button
 	{
-		color: orange;
-		cursor: pointer;
-		display: block;
+		color: white;
 		font-size: 18px;
-		padding: 16px;
+		height: 50px;
 		text-transform: uppercase;
+	}
+	.login-button:hover
+	{
+		color: orange;
+		background-color: #424242;
 	}
 	.dropdown
 	{
@@ -46,13 +49,18 @@ header
 	}
 	.dropdown-button
 	{
-		color: orange;
+		color: white;
 		cursor: pointer;
 		display: block;
-		padding: 13px;
+		height: 50px;
+		width: 50px;
 		position: relative;
 	}
-	.dropdown-content
+	.dropdown-button:hover
+	{
+		color: orange;
+	}
+	.dropdown-container
 	{
 		background-color: #282828;
 		color: white;
@@ -61,24 +69,23 @@ header
 		position: absolute;
 		z-index: 1;
 	}
-	.dropdown-content a
+	.dropdown-container button
 	{
 		background-color: #282828;
-		color: orange;
+		color: white;
 		cursor: pointer;
 		display: block;
 		font-size: 14px;
-		padding: 13px;
 		text-transform: uppercase;
 	}
-	.dropdown-content i
+	.dropdown-container i
 	{
-		padding-right: 5px;
 		vertical-align: middle;
 	}
-	.dropdown-content a:hover
+	.dropdown-container button:hover
 	{
-		background-color: #7E7E7E;
+		color: orange;
+		background-color: #424242;
 	}
 .left
 {
