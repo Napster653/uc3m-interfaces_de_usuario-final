@@ -5,35 +5,49 @@
 		<meta charset="UTF-8">
 		<!-- <link rel="shortcut icon" type="image/png" href="https://pcmruc3m.github.io/images/logo.png"/> -->
 		<link rel="stylesheet" href="style/material.css" type="text/css">
-		<link rel="stylesheet" href="style/reset.css" type="text/css">
 		<link rel="stylesheet" href="style/style.css" type="text/css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=latin-ext">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="scripts/material.js"></script>
+		<script src="scripts/material.min.js"></script>
 		<script src="scripts/script.js"></script>
 	</head>
 
 	<body>
-		<header>
-			<ul>
-				<li class="left"><p class="header-title">Power Videos</p></li>
-				<li class="right"><button class="mdl-button mdl-js-button mdl-js-ripple-effect login-button">Iniciar sesión</button></li>
-				<li class="right dropdown">
-					<!-- <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button-primary dropdown-button" onclick="showDropdown()"> -->
-					<button class="mdl-button mdl-js-button mdl-js-ripple-effect dropdown-button" onclick="showDropdown()">
-						<i class="material-icons md-24">more_vert</i>
-					</button>
-					<div id="more_dropdown" class="dropdown-container">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons md-24">settings</i> Ajustes
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout-title">Power Videos</span>
+					<div class="mdl-layout-spacer"></div>
+					<nav class="mdl-navigation mdl-layout--large-screen-only">
+						<a class="mdl-navigation__link" href="">Log in</a>
+						<a class="mdl-navigation__link" href="">Sign up</a>
+						<button id="power-videos-settings-menu" class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">more_vert</i>
 						</button>
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons md-24">help</i> Ayuda
-						</button>
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="power-videos-settings-menu">
+							<li class="mdl-menu__item">Settings</li>
+							<li class="mdl-menu__item">Help</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			
+			<main class="mdl-layout__content">
+				<div class="page-content mdl-layout--fixed-drawer">
+					<div class="mdl-layout__drawer">
+						<span class="mdl-layout-title">Title</span>
+						<nav class="mdl-navigation">
+							<a class="mdl-navigation__link" href="">Trending</a>
+							<a class="mdl-navigation__link" href="">Music</a>
+							<a class="mdl-navigation__link" href="">Gaming</a>
+							<a class="mdl-navigation__link" href="">Tech</a>
+						</nav>
 					</div>
-				</li>
-			</ul>
-		</header>
+				</div>
+			</main>
+
+		</div>
 	</body>
 </html>
