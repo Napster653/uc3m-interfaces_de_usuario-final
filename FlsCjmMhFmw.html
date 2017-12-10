@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Power Videos</title>
+		<meta charset="UTF-8">
+		<!-- <link rel="shortcut icon" type="image/png" href="https://pcmruc3m.github.io/images/logo.png"/> -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+		<link rel="stylesheet" href="style/material.css" type="text/css">
+		<link rel="stylesheet" href="style/style.css" type="text/css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="scripts/material.min.js"></script>
+		<script src="scripts/script.js"></script>
+	</head>
+
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-color--grey-800">
+
+			<header class="mdl-layout__header mdl-color--grey-800 mdl-color-text--white">
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout-title">Power Videos</span>
+					<div class="mdl-layout-spacer"></div>
+					<nav class="mdl-navigation mdl-layout--large-screen-only">
+						<a class="mdl-navigation__link mdl-color-text--white" href="">Log in</a>
+						<a class="mdl-navigation__link mdl-color-text--white" href="">Sign up</a>
+						<button id="power-videos-settings-large-menu" class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">more_vert</i>
+						</button>
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="power-videos-settings-large-menu">
+							<li class="mdl-menu__item">Settings</li>
+							<li class="mdl-menu__item">Help</li>
+						</ul>
+					</nav>
+					<nav class="mdl-navigation mdl-layout--small-screen-only">
+						<button id="power-videos-settings-small-menu" class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">more_vert</i>
+						</button>
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="power-videos-settings-small-menu">
+							<li class="mdl-menu__item">Log in</li>
+							<li class="mdl-menu__item">Sign up</li>
+							<li class="mdl-menu__item">Settings</li>
+							<li class="mdl-menu__item">Help</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div class="mdl-layout__drawer mdl-color--orange-600 mdl-color-text--black">
+				<nav class="mdl-navigation" id="power-videos-categories">
+					<a class="mdl-navigation__link mdl-color-text--black power-videos-is-active" href="./index.html">
+						<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-color--grey-900">
+							<i class="material-icons">trending_up</i>
+						</button>
+						<p>TRENDING</p>
+					</a>
+					<a class="mdl-navigation__link mdl-color-text--black" href="./music.html">
+						<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-color--grey-900">
+							<i class="material-icons">music_note</i>
+						</button>
+						<p>MUSIC</p>
+					</a>
+					<a class="mdl-navigation__link mdl-color-text--black" href="./gaming.html">
+						<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-color--grey-900">
+							<i class="material-icons">gamepad</i>
+						</button>
+						<p>GAMING</p>
+					</a>
+					<a class="mdl-navigation__link mdl-color-text--black" href="./tech.html">
+						<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-color--grey-900">
+							<i class="material-icons">memory</i>
+						</button>
+						<p>TECH</p>
+					</a>
+				</nav>
+			</div>
+			
+			<main class="mdl-layout__content">
+				<div class="power-videos-no-distractions">
+					<div class="power-videos-video-frame">
+						<iframe src="https://www.youtube-nocookie.com/embed/FlsCjmMhFmw?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-tablet">
+							<h2 class="mdl-color-text--white">YouTube Rewind: The Shape of 2017 | #YouTubeRewind</h2>
+						</div>
+						<div class="power-videos-video-interactions mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-tablet">
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--orange-600">
+								<i class="material-icons">thumb_up</i>
+							</button>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--orange-600">
+								<i class="material-icons">thumb_down</i>
+							</button>
+							<button id="power-videos-share-menu" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--orange-600">
+								<i class="material-icons">share</i>
+							</button>
+							<ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect mdl-color--grey-800" data-mdl-for="power-videos-share-menu">
+								<li class="mdl-menu__item">
+									<button class="mdl-button mdl-js-button">
+										<i class="ion-social-twitter"></i>
+									</button>
+									<button class="mdl-button mdl-js-button">
+										<i class="ion-social-facebook"></i>
+									</button>
+									<button class="mdl-button mdl-js-button">
+										<i class="ion-social-googleplus"></i>
+									</button>
+									<button class="mdl-button mdl-js-button">
+										<i class="ion-social-whatsapp"></i>
+									</button>
+									<button class="mdl-button mdl-js-button">
+										<i class="ion-social-instagram"></i>
+									</button>
+									<button class="mdl-button mdl-js-button">
+										<i class="ion-social-reddit"></i>
+									</button>
+								</li>
+							</ul>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--orange-600">
+								<i class="material-icons">add</i>
+							</button>
+						</div>
+						<div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-tablet">
+							<h3 class="mdl-color-text--grey-300">Comments:</h3>
+							<h6 class="mdl-color-text--orange-500">username</h6>
+							<p class="mdl-color-text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h6 class="mdl-color-text--orange-500">username</h6>
+							<p class="mdl-color-text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h6 class="mdl-color-text--orange-500">username</h6>
+							<p class="mdl-color-text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h6 class="mdl-color-text--orange-500">username</h6>
+							<p class="mdl-color-text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h6 class="mdl-color-text--orange-500">username</h6>
+							<p class="mdl-color-text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h6 class="mdl-color-text--orange-500">username</h6>
+							<p class="mdl-color-text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-tablet">
+							<h3 class="mdl-color-text--grey-300">Recommended:</h3>
+							<div class="power-videos-gallery">
+								<a href="./ye8-GQNf8p0.html"><img src="http://i.ytimg.com/vi/ye8-GQNf8p0/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./ye8-GQNf8p0.html">JURASSIC WORLD 2: El Reino Caído Trailer Español (2018)</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./BFaAxIVgvK4.html"><img src="http://i.ytimg.com/vi/BFaAxIVgvK4/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./BFaAxIVgvK4.html">¡ÉPICO! 13 YOUTUBERS Y 1 REY MAGO</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./TjqqD2nhWv8.html"><img src="http://i.ytimg.com/vi/TjqqD2nhWv8/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./TjqqD2nhWv8.html">Villancico 2017 LOS MORANCOS</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./Ic9-CLD_VLM.html"><img src="http://i.ytimg.com/vi/Ic9-CLD_VLM/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./Ic9-CLD_VLM.html">HASTA QUE ARDA - Jordi Wild (Prod por IKKIISBACK)</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./vn9mMeWcgoM.html"><img src="http://i.ytimg.com/vi/vn9mMeWcgoM/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./vn9mMeWcgoM.html">Jurassic World: Fallen Kingdom - Official Trailer [HD]</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./w4AImq08j9o.html"><img src="http://i.ytimg.com/vi/w4AImq08j9o/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./w4AImq08j9o.html">Why I'm not in YouTube Rewind 2017</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./HoGu-E--kIQ.html"><img src="http://i.ytimg.com/vi/HoGu-E--kIQ/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./HoGu-E--kIQ.html">LATE MOTIV - David Broncano. ‘Una de faquires’ | #LateMotiv312</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./ifoFOXRBiHM.html"><img src="http://i.ytimg.com/vi/ifoFOXRBiHM/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./ifoFOXRBiHM.html">Audi A8 (2018) The Most High-Tech Car Ever? – DEMONSTRATION</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./XISIwOdoZ5Y.html"><img src="http://i.ytimg.com/vi/XISIwOdoZ5Y/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./XISIwOdoZ5Y.html">Best of PUBG Voice Chat</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./oqB37mSn9BA.html"><img src="http://i.ytimg.com/vi/oqB37mSn9BA/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./oqB37mSn9BA.html">I Rented a 2013 Tesla Model S-- and It Broke!!!</a>
+							</div>
+							<div class="power-videos-gallery">
+								<a href="./OVRh3aOnblE.html"><img src="http://i.ytimg.com/vi/OVRh3aOnblE/maxresdefault.jpg"></a>
+								<a class="mdl-color-text--grey-200" href="./OVRh3aOnblE.html">HOW FAR CAN WE RIDE ELECTRIC SKATEBOARDS?? | Boosted Board KILLER !! | VLOG² 116</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

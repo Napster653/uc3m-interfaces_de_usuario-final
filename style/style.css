@@ -1,0 +1,81 @@
+#power-videos-categories p
+{
+	display: inline-block;
+	font-size: 18px;
+}
+#power-videos-categories button
+{
+	margin-right: 10px;
+}
+.power-videos-gallery
+{
+	overflow: hidden;
+}
+.power-videos-gallery img
+{
+	max-width: 100%;
+}
+.power-videos-gallery a
+{
+	display: inline-block;
+	margin-top: 5px;
+	overflow: hidden;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+}
+.power-videos-is-active
+{
+	background-color: rgb(224,224,224);
+}
+.power-videos-no-distractions
+{
+	background-color: black;
+	overflow: hidden;
+	width: 100%;
+}
+.power-videos-video-frame
+{
+	height: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 45%;
+	position: relative;
+	width: 80%;
+}
+.power-videos-video-frame iframe
+{
+	position: absolute;
+	border: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.power-videos-video-interactions
+{
+	text-align: center;
+}
+.power-videos-video-interactions button
+{
+	margin: 0 10px;
+}
+.power-videos-video-interactions ul li:hover
+{
+	background-color: inherit;
+}
+.power-videos-video-interactions ul li button
+{
+	font-size: 24px;
+}
+.power-videos-video-interactions ul li button:hover
+{
+	background-color: orange;
+	font-size: 24px;
+}
+.power-videos-share-button button
+{
+	display: inline;
+	margin: 0;
+}
